@@ -53,7 +53,7 @@ parser.add_argument('--benchmark', type=str, default='adaptec1')
 parser.add_argument('--soft_coefficient', type=float, default = 1)
 parser.add_argument('--batch_size', type=int, default=64)
 parser.add_argument('--is_test', action='store_true', default=False)
-parser.add_argument('--save_fig', action='store_true', default=False)
+parser.add_argument('--save_fig', action='store_true', default=True)
 args = parser.parse_args()
 writer = SummaryWriter('./tb_log')
 
